@@ -6,7 +6,6 @@ body, html{
 
 *{
     box-sizing: border-box;
-    font-size: 22px;
 }
 
 main{
@@ -26,10 +25,15 @@ input, button{
     margin: 1rem;
 }
 
+p{
+    font-size: 1.3rem;
+}
+
 .termsandconditions{
     display: block;
     position: relative;
     padding-left: 35px;
+    font-size: 1.3rem;
     cursor: pointer;
     user-select: none;
 }
