@@ -6,6 +6,7 @@ body, html{
 
 *{
     box-sizing: border-box;
+    font-size: 22px;
 }
 
 main{
@@ -23,4 +24,57 @@ input, button{
     border: 1px solid lightgray;
     outline: none;
     margin: 1rem;
+}
+
+.termsandconditions{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.termsandconditions input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #cccccc;
+}
+
+.termsandconditions:hover input ~ .checkmark{
+    background-color: darkgrey;
+    transition: ease .3s;
+}
+
+.termsandconditions input:checked ~ .checkmark{
+    background-color: #2196F3;
+}
+
+.checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.termsandconditions input:checked ~ .checkmark:after{
+    display: block;
+}
+
+.termsandconditions .checkmark:after{
+    left: 9px;
+    top: 5px;
+    height: 5px;
+    border: solid #ffffff;
+    border-width: 0 3px 0 3px;
+    transform: rotate(45deg);
 }
