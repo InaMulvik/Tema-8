@@ -20,7 +20,7 @@ function greet(){
     form.innerHTML = '<h1>Hei ' + name.value + '</h1>'
     form.innerHTML += '<p>Det er veldig hyggelig at du vil være med i prosjektet vårt</p>'
     form.innerHTML += '<p>Om jeg forstår det riktig, er navnet ditt ' + name.value + 
-    ' og eposten din er: ' + email.value + '</p>'
+    ', og eposten din er: ' + email.value + '</p>'
 
     const newOkButton = document.createElement('button')
     newOkButton.innerHTML = 'Ok'
