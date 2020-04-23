@@ -4,6 +4,7 @@ let submit = document.querySelector('#submit')
 let form = document.querySelector('#form')
 let password = document.querySelector('#password')
 let repeat = document.querySelector('#repeat')
+let checkbox = document.querySelector('#checkbox')
 submit.addEventListener('click', okButton)
 
 /* name.addEventListener('input', nameInput)
