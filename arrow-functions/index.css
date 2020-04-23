@@ -5,6 +5,10 @@ html {
     font-family: Arial;
 }
 
+html{
+    scroll-snap-type: y mandatory;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -15,3 +19,12 @@ main {
     place-items: center;
 }
 
+section{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    background-size: cover;
+}
