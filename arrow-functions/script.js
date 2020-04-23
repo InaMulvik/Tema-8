@@ -16,3 +16,6 @@ console.log(fler('Simon', 'Per'))
 
 setTimeout(() => document.querySelector('body').style.backgroundColor='orange', 2000)
 
+const antallTegn = ord => 'Dette ordet har ' + ord.length + ' karakterer'
+
+console.log(antallTegn('Nikodemos'))
