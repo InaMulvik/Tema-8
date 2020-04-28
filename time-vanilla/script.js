@@ -11,7 +11,7 @@ const time = () => {
     let min = t.getMinutes()
     let sec = t.getSeconds()
 
-circle.innerHTML = `${hours}:${min}:${sec}`
+    circle.innerHTML = `<h1>${hours}:${min}:${sec}</h1>`
 }
 
 let timer = setInterval(time, 1000)
