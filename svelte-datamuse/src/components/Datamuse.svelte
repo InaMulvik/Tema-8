@@ -3,7 +3,7 @@
     //fetch data
     export let words
     $: if(words.length > 2) {
-        fetch('https://api.datamuse.com/words?rel_rhy=' + words)
+        fetch('https://api.datamuse.com/words?ml=' + words)
         .then( res => res.json() )
             .then( json => {
                 console.log(json)
@@ -13,10 +13,27 @@
 </script>
 
 <section>
-    <h2>The value of the input field: {words}</h2>
     {#each synonyms as synonym}
-        <p>{synonym.word}</p>
+        <div>
+            <h5>{synonym.word}</h5>
+        </div>
     {:else}
-        <p>Please type a word or sentence in the input field</p>
+        <div>
+            <p>Please type a word or sentence in the input field</p>
+        </div>
     {/each}
 </section>
+
+<style>
+    section{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+    section > div{
+        background-color: lightgrey;
+        display: grid;
+        place-items: center;
+        height: 100%;
+    }
+</style>
