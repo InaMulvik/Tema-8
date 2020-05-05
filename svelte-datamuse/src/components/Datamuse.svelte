@@ -2,6 +2,8 @@
     //fetch data
     export let words
     fetch('https://api.datamuse.com/words?ml=' + words)
+        .then( res => res.json() )
+            .then( json => console.log(json) )
 </script>
 
 <section>
