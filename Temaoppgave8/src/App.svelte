@@ -39,7 +39,7 @@
             <h5>{synonym.word}</h5>
         </div>
     {:else}
-        <p>Please type a word in the input field</p>
+        <p>Please type a word in the input field (US English only)</p>
     {/each}
 </section>
 
