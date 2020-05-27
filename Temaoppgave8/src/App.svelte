@@ -26,10 +26,13 @@
 <main>
 
 <header>
-	<div>	
+	<div class="buttons">
 		<button on:click={()=> {what='synonyms';getWords()}}>Synonyms</button>
 		<button on:click={()=>{what='antonyms';getWords()}}>Antonyms</button>
+	</div>
+	<div>
 		<input placeholder='type something to find {what}' bind:value={words} on:input={getWords} on:click={vanish}>
+		<p>Please type a word in the input field (US English only)</p>
 	</div>
 </header>
 
@@ -38,22 +41,35 @@
         <div>
             <h5>{synonym.word}</h5>
         </div>
-    {:else}
-        <p>Please type a word in the input field (US English only)</p>
     {/each}
 </section>
 
 </main>
 <style>
+	:global(body){
+		background-color: rgb(245, 255, 245);
+	}
 	main{
 		display:grid;
 		align-items:start;
-		background-color: rgb(245, 255, 245);
 	}
 	header{
 		display:grid;
 		place-items:center;
 		height:20vh;
+	}
+	p{
+		text-align: center;
+		padding-top: .5rem;
+		margin: auto;
+	}
+	header > div{
+		margin: auto;
+		padding: none;
+	}
+	.buttons{
+		padding-top: 3.9rem;
+		padding-right: 34.5rem;
 	}
 	button{
 		cursor: pointer;
@@ -68,6 +84,7 @@
 	}
 	input{
 		width:40vw;
+		height: 4.5vh;
 	}
     section{
         display: grid;
