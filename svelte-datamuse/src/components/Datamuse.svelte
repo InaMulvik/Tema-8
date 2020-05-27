@@ -31,7 +31,7 @@
         gap: 1rem;
     }
     section > div{
-        background-color: lightgrey;
+        background-color: rgb(178, 236, 178, .7);
         display: grid;
         place-items: center;
         height: 100%;
