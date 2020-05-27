@@ -18,6 +18,9 @@
 			synonyms = []
 		}
 	}
+	const vanish = event => {
+		event.target.placeholder=""
+	}
 </script>
 
 <main>
@@ -26,7 +29,7 @@
 	<div>	
 		<button on:click={()=> {what='synonyms';getWords()}}>Synonyms</button>
 		<button on:click={()=>{what='antonyms';getWords()}}>Antonyms</button>
-		<input placeholder='type something to find {what}' bind:value={words} on:input={getWords}>
+		<input placeholder='type something to find {what}' bind:value={words} on:input={getWords} on:click={vanish}>
 	</div>
 </header>
 
@@ -57,7 +60,7 @@
 		background-color: rgba(117, 128, 117, 0.2);
 		border: none;
 		border-radius: 1.2rem 0 0 0;
-		padding: .5rem .5rem;
+		padding: .5rem 1rem;
 	}
 	button:hover{
 		background-color: rgba(178, 236, 178, .7);
