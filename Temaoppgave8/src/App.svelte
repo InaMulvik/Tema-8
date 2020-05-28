@@ -57,11 +57,6 @@
 		place-items:center;
 		height:20vh;
 	}
-	p{
-		text-align: center;
-		padding-top: .5rem;
-		margin: auto;
-	}
 	header > div{
 		margin: auto;
 		padding: none;
