@@ -73,13 +73,13 @@
 	}
 	button{
 		cursor: pointer;
-		background-color: rgba(117, 128, 117, 0.2);
+		background-color: rgba(151, 165, 151, 0.7);
 		border: none;
-		border-radius: 1.2rem 0 0 0;
+		border-radius: 1.6rem 0 0 0;
 		padding: .5rem 1rem;
 	}
 	button:hover{
-		background-color: rgba(178, 236, 178, .7);
+		background-color: rgba(178, 236, 178, .9);
 		transition: .5s ease;
 	}
 	input{
@@ -94,7 +94,7 @@
         gap: 1rem;
     }
     section > div{
-        background-color: rgb(178, 236, 178, .7);
+        background-color: rgb(178, 236, 178, .9);
         display: grid;
         place-items: center;
         height: 100%;
