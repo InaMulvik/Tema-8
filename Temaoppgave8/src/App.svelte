@@ -80,7 +80,7 @@
 	}
 	button:hover{
 		background-color: rgba(178, 236, 178, .9);
-		transition: .5s ease;
+		transition: .3s ease;
 	}
 	input{
 		width:40vw;
