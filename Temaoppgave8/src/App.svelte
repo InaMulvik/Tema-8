@@ -62,7 +62,7 @@
 		padding: none;
 	}
 	.buttons{
-		padding-top: 3.9rem;
+		padding-top: 5.7rem;
 		padding-right: 34.5rem;
 	}
 	button{
@@ -78,7 +78,7 @@
 	}
 	input{
 		width:40vw;
-		height: 4.5vh;
+		height: 4.3vh;
 	}
     section{
         display: grid;
