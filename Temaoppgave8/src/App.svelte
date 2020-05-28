@@ -73,7 +73,7 @@
 	}
 	button{
 		cursor: pointer;
-		background-color: rgba(151, 165, 151, 0.7);
+		background-color: rgb(163, 185, 163);
 		border: none;
 		border-radius: 1.6rem 0 0 0;
 		padding: .5rem 1rem;
