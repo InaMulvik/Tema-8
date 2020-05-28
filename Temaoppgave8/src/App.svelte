@@ -49,6 +49,10 @@
 	:global(body){
 		background-color: rgb(245, 255, 245);
 	}
+	h1{
+		margin: auto;
+		padding: none;
+	}
 	main{
 		display:grid;
 		align-items:start;
