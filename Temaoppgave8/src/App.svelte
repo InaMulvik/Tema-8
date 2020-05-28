@@ -31,8 +31,7 @@
 		<button on:click={()=>{what='antonyms';getWords()}}>Antonyms</button>
 	</div>
 	<div>
-		<input placeholder='type something to find {what}' bind:value={words} on:input={getWords} on:click={vanish}>
-		<p>Please type a word in the input field (US English only)</p>
+		<input placeholder='(US English only) {what}' bind:value={words} on:input={getWords} on:click={vanish}>
 	</div>
 </header>
 
@@ -48,10 +47,6 @@
 <style>
 	:global(body){
 		background-color: rgb(245, 255, 245);
-	}
-	h1{
-		margin: auto;
-		padding: none;
 	}
 	main{
 		display:grid;
