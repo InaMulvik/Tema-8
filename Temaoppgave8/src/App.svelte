@@ -29,9 +29,10 @@
 	<div class="buttons">
 		<button on:click={()=> {what='synonyms';getWords()}}>Synonyms</button>
 		<button on:click={()=>{what='antonyms';getWords()}}>Antonyms</button>
+		<input placeholder='(US English only) {what}' bind:value={words} on:input={getWords} on:click={vanish}>
 	</div>
 	<div>
-		<input placeholder='(US English only) {what}' bind:value={words} on:input={getWords} on:click={vanish}>
+		
 	</div>
 </header>
 
@@ -54,16 +55,18 @@
 	}
 	header{
 		display:grid;
-		place-items:center;
-		height:20vh;
+		height:100%;
 	}
 	header > div{
 		margin: auto;
 		padding: none;
 	}
 	.buttons{
-		padding-top: 5.7rem;
-		padding-right: 34.5rem;
+		display: grid;
+		grid-template-columns: 10rem 10rem;
+		gap: .2rem;
+		width: 100vw;
+		padding-top: .3rem;
 	}
 	button{
 		cursor: pointer;
@@ -78,7 +81,7 @@
 	}
 	input{
 		width:40vw;
-		height: 4.3vh;
+		place-items:center;
 	}
     section{
         display: grid;

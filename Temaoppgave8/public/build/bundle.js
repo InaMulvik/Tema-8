@@ -337,7 +337,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (39:4) {#each synonyms as synonym}
+    // (40:4) {#each synonyms as synonym}
     function create_each_block(ctx) {
     	let div;
     	let h5;
@@ -351,9 +351,9 @@ var app = (function () {
     			h5 = element("h5");
     			t0 = text(t0_value);
     			t1 = space();
-    			add_location(h5, file, 40, 12, 888);
-    			attr_dev(div, "class", "svelte-1pbytia");
-    			add_location(div, file, 39, 8, 870);
+    			add_location(h5, file, 41, 12, 891);
+    			attr_dev(div, "class", "svelte-g1cic4");
+    			add_location(div, file, 40, 8, 873);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -373,7 +373,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(39:4) {#each synonyms as synonym}",
+    		source: "(40:4) {#each synonyms as synonym}",
     		ctx
     	});
 
@@ -388,10 +388,11 @@ var app = (function () {
     	let t1;
     	let button1;
     	let t3;
-    	let div1;
     	let input;
     	let input_placeholder_value;
     	let t4;
+    	let div1;
+    	let t5;
     	let section;
     	let dispose;
     	let each_value = /*synonyms*/ ctx[0];
@@ -413,31 +414,32 @@ var app = (function () {
     			button1 = element("button");
     			button1.textContent = "Antonyms";
     			t3 = space();
-    			div1 = element("div");
     			input = element("input");
     			t4 = space();
+    			div1 = element("div");
+    			t5 = space();
     			section = element("section");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(button0, "class", "svelte-1pbytia");
+    			attr_dev(button0, "class", "svelte-g1cic4");
     			add_location(button0, file, 29, 2, 537);
-    			attr_dev(button1, "class", "svelte-1pbytia");
+    			attr_dev(button1, "class", "svelte-g1cic4");
     			add_location(button1, file, 30, 2, 610);
-    			attr_dev(div0, "class", "buttons svelte-1pbytia");
-    			add_location(div0, file, 28, 1, 513);
     			attr_dev(input, "placeholder", input_placeholder_value = "(US English only) " + /*what*/ ctx[2]);
-    			attr_dev(input, "class", "svelte-1pbytia");
-    			add_location(input, file, 33, 2, 697);
-    			attr_dev(div1, "class", "svelte-1pbytia");
-    			add_location(div1, file, 32, 1, 689);
-    			attr_dev(header, "class", "svelte-1pbytia");
+    			attr_dev(input, "class", "svelte-g1cic4");
+    			add_location(input, file, 31, 2, 682);
+    			attr_dev(div0, "class", "buttons svelte-g1cic4");
+    			add_location(div0, file, 28, 1, 513);
+    			attr_dev(div1, "class", "svelte-g1cic4");
+    			add_location(div1, file, 33, 1, 795);
+    			attr_dev(header, "class", "svelte-g1cic4");
     			add_location(header, file, 27, 0, 503);
-    			attr_dev(section, "class", "svelte-1pbytia");
-    			add_location(section, file, 37, 0, 820);
-    			attr_dev(main, "class", "svelte-1pbytia");
+    			attr_dev(section, "class", "svelte-g1cic4");
+    			add_location(section, file, 38, 0, 823);
+    			attr_dev(main, "class", "svelte-g1cic4");
     			add_location(main, file, 25, 0, 495);
     		},
     		l: function claim(nodes) {
@@ -450,11 +452,12 @@ var app = (function () {
     			append_dev(div0, button0);
     			append_dev(div0, t1);
     			append_dev(div0, button1);
-    			append_dev(header, t3);
-    			append_dev(header, div1);
-    			append_dev(div1, input);
+    			append_dev(div0, t3);
+    			append_dev(div0, input);
     			set_input_value(input, /*words*/ ctx[1]);
-    			append_dev(main, t4);
+    			append_dev(header, t4);
+    			append_dev(header, div1);
+    			append_dev(main, t5);
     			append_dev(main, section);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
