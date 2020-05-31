@@ -352,7 +352,7 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			add_location(h5, file, 41, 12, 891);
-    			attr_dev(div, "class", "svelte-g1cic4");
+    			attr_dev(div, "class", "svelte-48n9cm");
     			add_location(div, file, 40, 8, 873);
     		},
     		m: function mount(target, anchor) {
@@ -424,22 +424,22 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(button0, "class", "svelte-g1cic4");
+    			attr_dev(button0, "class", "svelte-48n9cm");
     			add_location(button0, file, 29, 2, 537);
-    			attr_dev(button1, "class", "svelte-g1cic4");
+    			attr_dev(button1, "class", "svelte-48n9cm");
     			add_location(button1, file, 30, 2, 610);
     			attr_dev(input, "placeholder", input_placeholder_value = "(US English only) " + /*what*/ ctx[2]);
-    			attr_dev(input, "class", "svelte-g1cic4");
+    			attr_dev(input, "class", "svelte-48n9cm");
     			add_location(input, file, 31, 2, 682);
-    			attr_dev(div0, "class", "buttons svelte-g1cic4");
+    			attr_dev(div0, "class", "buttons svelte-48n9cm");
     			add_location(div0, file, 28, 1, 513);
-    			attr_dev(div1, "class", "svelte-g1cic4");
+    			attr_dev(div1, "class", "svelte-48n9cm");
     			add_location(div1, file, 33, 1, 795);
-    			attr_dev(header, "class", "svelte-g1cic4");
+    			attr_dev(header, "class", "svelte-48n9cm");
     			add_location(header, file, 27, 0, 503);
-    			attr_dev(section, "class", "svelte-g1cic4");
+    			attr_dev(section, "class", "svelte-48n9cm");
     			add_location(section, file, 38, 0, 823);
-    			attr_dev(main, "class", "svelte-g1cic4");
+    			attr_dev(main, "class", "svelte-48n9cm");
     			add_location(main, file, 25, 0, 495);
     		},
     		l: function claim(nodes) {

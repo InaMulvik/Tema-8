@@ -81,7 +81,6 @@
 	}
 	input{
 		width:40vw;
-		place-items:center;
 	}
     section{
         display: grid;
