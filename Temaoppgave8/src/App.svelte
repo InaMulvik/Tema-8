@@ -51,21 +51,17 @@
 	}
 	main{
 		display:grid;
-		align-items:start;
 	}
 	header{
 		display:grid;
-		height:100%;
-	}
-	header > div{
+		place-items: center;
 		margin: auto;
-		padding: none;
+		padding-right: 22vw;
 	}
 	.buttons{
 		display: grid;
 		grid-template-columns: 10rem 10rem;
 		gap: .2rem;
-		width: 100vw;
 		padding-top: .3rem;
 	}
 	button{
@@ -80,12 +76,12 @@
 		transition: .3s ease;
 	}
 	input{
+		display: grid;
 		width:40vw;
 	}
     section{
         display: grid;
-		align-items:start;
-		justify-content: start;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 1rem;
     }
