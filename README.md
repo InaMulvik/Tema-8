@@ -12,7 +12,7 @@ npm install
 npm start
 ```
 
-![svelte electron](https://firebasestorage.googleapis.com/v0/b/fireship-app.appspot.com/o/assets%2Felectron-svelte-hello.png?alt=media&token=0d3ecb24-3024-4358-ac26-7676b3e60fa1)
+![svelte electron](https://1drv.ms/u/s!AiySeUgeBrl4hDNm3a9Mn6WGHyw3)
 
 ## Notes
 
